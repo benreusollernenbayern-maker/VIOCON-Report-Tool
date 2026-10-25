@@ -3,7 +3,7 @@
 Erstellt aus den Monta-Exporten (Excel/PDF) fertige **LIS- und Flotten-Reports**. Jeder Kunde
 bekommt ein eigenes Profil mit eigenen Ordnern und auf Wunsch einem komplett eigenen Report-Layout.
 
-<!-- VORSCHAU -->
+![Vorschau](https://github.com/benreusollernenbayern-maker/VIOCON-Report-Tool/releases/latest/download/Vorschau.png)
 
 ## Download
 
