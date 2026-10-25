@@ -34,6 +34,8 @@ Alle Profile und Einstellungen bleiben dabei erhalten.
 - **Eigene Reports pro Kunde:** Mit einer eigenen `.vrsettings`- und `.vrdesign`-Datei lässt sich ein
   völlig anderer Report erstellen, auch mit mehreren PDFs oder einer zusätzlichen Excel-Tabelle.
 - **Multi-Export:** mehrere Profile auf einmal erstellen, mit eigener Quelle und einem Unterordner pro Profil.
+- **Auswahl, was erstellt wird:** pro Profil und pro Multi-Export-Eintrag, z. B. nur LIS, nur Flotte oder
+  ohne Zusatz-Tabelle. In den Einstellungen legst du fest, ob jedes Mal oder nur beim ersten Mal gefragt wird.
 - **Hinweise und Warnungen**, wenn etwas merkwürdig ist, zum Beispiel:
   - Dateien aus unterschiedlichen Monaten
   - eine Datei ist noch in Excel geöffnet
