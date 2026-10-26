@@ -34,6 +34,11 @@ Alle Profile und Einstellungen bleiben dabei erhalten.
 - **Eigene Reports pro Kunde:** Mit einer eigenen `.vrsettings`- und `.vrdesign`-Datei lässt sich ein
   völlig anderer Report erstellen, auch mit mehreren PDFs oder einer zusätzlichen Excel-Tabelle.
 - **Multi-Export:** mehrere Profile auf einmal erstellen, mit eigener Quelle und einem Unterordner pro Profil.
+- **Monatsordner:** Einmal festlegen, wo die Dateien jeden Monat liegen (z. B. `H:\reports\2026-09\…`
+  und `H:\invoices\2026-09\…`). Danach nimmt jeder Report automatisch den neuesten Monat; ältere Monate
+  lassen sich auswählen. Profile für alle Team-Ordner lassen sich mit einem Klick anlegen.
+- **Multi-Export „Alle Kunden“:** immer alle Profile, zeigt Kunden ohne Dateien und neue Ordner ohne Profil.
+- **Suche** nach Kunden auf der Startseite und unter „Kunden“.
 - **Auswahl, was erstellt wird:** pro Profil und pro Multi-Export-Eintrag, z. B. nur LIS, nur Flotte oder
   ohne Zusatz-Tabelle. In den Einstellungen legst du fest, ob jedes Mal oder nur beim ersten Mal gefragt wird.
 - **Hinweise und Warnungen**, wenn etwas merkwürdig ist, zum Beispiel:

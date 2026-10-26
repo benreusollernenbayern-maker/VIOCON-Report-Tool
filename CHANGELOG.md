@@ -2,6 +2,57 @@
 
 Alle Änderungen am VIOCON Report Tool (Profiles). Die neueste Version steht oben.
 
+## [1.1.0] – 26.10.2026
+
+### Neu
+- **Monatsordner:** Unter Einstellungen einmal festlegen, wo die Dateien jeden Monat liegen
+  (z. B. `H:\reports` und `H:\invoices` mit den Unterordnern `2026-09`, `2026-10` …). Ein Profil merkt sich
+  nur noch seine Team-Ordner (z. B. `Muster_Fleet` und `Muster_LIS`) – der Monat wechselt automatisch.
+  Ordner, die mit `charge_home` beginnen, werden ignoriert (einstellbar).
+  - Beliebig viele Monatsordner, z. B. je einer für LIS-Dateien, Flotten-Dateien und Rechnungen. Mehrere
+    lassen sich auf einmal hineinziehen; wird ein übergeordneter Ordner (z. B. `H:\`) gewählt, werden alle
+    Monatsordner darin übernommen.
+  - Jeder Monatsordner zeigt, was darin erkannt wurde (LIS-Dateien, Flotten-Dateien, Rechnungen) und den
+    neuesten Monat, und lässt sich nachträglich ändern oder entfernen – die Profile bleiben dabei erhalten.
+  - **Dateiarten je Ordner:** Pro Monatsordner ankreuzen, welche Dateien daraus genommen werden (z. B. aus
+    `H:\invoices` nur Gutschriften und Rechnungen). Beim Hinzufügen wird das aus dem Inhalt vorgeschlagen.
+- **Mehrere feste Ordner pro Profil** (auch zusammen mit Monatsordnern), jeweils mit eigener Auswahl der
+  Dateiarten, ändern und entfernen.
+- **Report erstellen:** Der neueste Monat wird automatisch genommen, die verwendeten Ordner werden angezeigt.
+  Darunter lässt sich ein anderer Monat auswählen – die passenden Dateien werden selbst gefunden.
+- **Profile einfacher anlegen:** Im Assistenten die Team-Ordner aus einer Suchliste wählen (der passende
+  Fleet-/LIS-Partner wird mit ausgewählt), die Beispieldateien kommen automatisch aus dem neuesten Monat.
+- **Profile aus Monatsordnern anlegen:** Für alle Team-Ordner ohne Profil auf einmal – Fleet und LIS derselben
+  Firma werden zu einem Profil zusammengefasst.
+- **Multi-Export „Alle Profile“:** enthält immer alle Profile, auch später angelegte. Beim Ausführen werden
+  Profile ohne Dateien im Monat hervorgehoben und neue Team-Ordner ohne Profil angezeigt (mit „Profile anlegen“).
+- **Multi-Export, erweiterte Optionen:** Monat für alle (neuester, Vormonat oder ein bestimmter Monat) und pro
+  Profil ein eigener Monat sowie eigene Settings- und Design-Dateien nur für diesen Multi-Export.
+- **Eine Design-Datei je Ausgabe:** z. B. eigene Design-Dateien für den LIS-Report, den Flotten-Report oder eine
+  Zusatz-Tabelle aus der Settings-Datei.
+- **Suche** nach Kunden auf der Startseite und unter „Kunden“.
+- Hinweis beim Start, wenn ein neuer Monat dazugekommen ist.
+- **Alles wieder herausnehmen:**
+  - Monatsordner auch beim Bearbeiten eines Profils verwalten (hinzufügen, ändern, entfernen).
+  - Gewählte Team-Ordner, feste Ordner und einzelne gelernte Dateiarten lassen sich im Assistenten entfernen.
+  - Im Multi-Export mit „Alle Profile“ einzelne Profile herausnehmen; die Auswahl „Was wird erstellt“ eines
+    Profils lässt sich auf „wie im Profil“ zurücksetzen.
+  - Mehrere Profile auf einmal löschen (Kunden → Papierkorb).
+  - Ordnerfelder lassen sich mit × leeren.
+
+### Geändert
+- Assistent: Schritt „Ordner“ kommt jetzt vor „Beispieldateien“.
+- Dateiname: Der Teil nach der Belegnummer ist der Monta-Teamname aus dem Export, z. B.
+  `Gutschrift_3508-2026-12345_Muster-LIS_2026-09.pdf`. Fehlt die Nummer in der PDF, wird sie aus dem
+  PDF-Namen genommen.
+- Export/Import der Einstellungen enthält jetzt auch die Monatsordner und die eigenen Dateien in Multi-Exporten.
+
+### Behoben
+- Gespeicherte Multi-Exporte ließen sich nicht mehr bearbeiten (das Fenster ging sofort wieder zu).
+- Exporte mit dem Monat am Ende im Format `2026-09`: Der Monat stand im Kundennamen und im Dateinamen.
+- Gutschrift und Rechnung (beide nur `<Nummer>.pdf`) wurden bei Profilen mit LIS und Flotte nicht sicher
+  unterschieden – jetzt über den Team-Ordner.
+
 ## [1.0.1] – 25.10.2026
 
 ### Neu
